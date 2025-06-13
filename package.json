@@ -1,0 +1,46 @@
+{
+  "name": "moviefinder",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.2.4",
+    "@heroicons/react": "^2.2.0",
+    "@reduxjs/toolkit": "^1.9.5",
+    "localforage": "^1.10.0",
+    "lodash.debounce": "^4.0.8",
+    "match-sorter": "^6.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-loading-skeleton": "^3.2.1",
+    "react-responsive-carousel": "^3.2.23",
+    "react-router": "^6.10.0",
+    "react-router-dom": "^6.10.0",
+    "react-stars": "^2.2.5",
+    "sort-by": "^1.2.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.25.0",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react": "^4.4.1",
+    "@vitejs/plugin-react-swc": "^3.0.0",
+    "autoprefixer": "^10.4.14",
+    "concurrently": "^8.0.1",
+    "eslint": "^9.25.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^16.0.0",
+    "postcss": "^8.4.23",
+    "prettier": "^2.8.7",
+    "prettier-plugin-tailwindcss": "^0.2.7",
+    "tailwindcss": "^3.3.1",
+    "vite": "^4.2.0"
+  }
+}
