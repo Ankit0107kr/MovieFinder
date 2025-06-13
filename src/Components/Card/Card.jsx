@@ -30,15 +30,14 @@ const Card = ({ movie }) => {
           backgroundImage: `url(https://image.tmdb.org/t/p/original/${movie.poster_path})`,
         }}
       >
-        <h1 className="ml-1 hidden font-semibold md:group-hover:block">
-          {Math.round(movie.vote_average * 10) / 10}⭐
+        
+        <h1 className="mb-2 ml-1 hidden text-sm font-light md:group-hover:block">
+          {movie.title}
         </h1>
         <h1 className="mb-2 ml-1 hidden text-sm font-light md:group-hover:block">
           {movie.release_date}
         </h1>
-        <h1 className="ml-1 hidden text-xs md:group-hover:block">
-          {movie.overview}
-        </h1>
+        
       </div>
     </Link>
   );
