@@ -28,4 +28,17 @@ MovieFinder is a sleek, responsive React application that allows users to search
 ---
 
 ## 📂 Folder Structure
-
+MovieFinder/
+├── public/
+├── src/
+│ ├── components/
+│ │ ├── Header.jsx
+│ │ ├── SearchBar.jsx
+│ │ └── Feedback.jsx
+│ ├── pages/
+│ │ ├── Home.jsx
+│ │ └── FeedbackPage.jsx
+│ ├── App.jsx
+│ └── main.jsx
+├── package.json
+└── README.md
