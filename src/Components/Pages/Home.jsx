@@ -93,34 +93,40 @@ const Home = () => {
 
         {/* Genre Dropdown */}
         <div className="relative w-full max-w-xs">
-          <select
-            value={genre}
-            onChange={handleGenreChange}
-            className="block w-full bg-white/10 backdrop-blur-sm text-white border border-gray-600 rounded-md py-2 px-4 appearance-none focus:outline-none focus:ring-2 focus:ring-indigo-500"
-          >
-            <option value="">🎬 All Categories</option>
-            {genreList.map((g) => (
-              <option key={g.id} value={g.id}>
-                {g.name}
-              </option>
-            ))}
-          </select>
-          <div className="pointer-events-none absolute inset-y-0 right-3 flex items-center text-gray-300">
-            <svg
-              className="w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
-          </div>
-        </div>
+  <select
+    value={genre}
+    onChange={handleGenreChange}
+    className="block w-full bg-gray-900 text-white border border-gray-600 rounded-md py-2 px-4 appearance-none focus:outline-none focus:ring-2 focus:ring-indigo-500"
+  >
+    <option value="">🎬 All Categories</option>
+    {genreList.map((g) => (
+      <option
+        key={g.id}
+        value={g.id}
+        style={{ backgroundColor: "#1f2937", color: "white" }} // Tailwind's gray-800 and white
+      >
+        {g.name}
+      </option>
+    ))}
+  </select>
+
+  <div className="pointer-events-none absolute inset-y-0 right-3 flex items-center text-gray-300">
+    <svg
+      className="w-5 h-5"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      viewBox="0 0 24 24"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M19 9l-7 7-7-7"
+      />
+    </svg>
+  </div>
+</div>
+
       </div>
 
       {/* Carousels */}
