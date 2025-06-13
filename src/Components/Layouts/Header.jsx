@@ -14,6 +14,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 const navigation = [
   { name: 'Home', href: '/' },
   { name: 'Feedback', href: '/feedback' },
+  { name: 'About Us', href: '/about' }, // ✅ Single About Us
 ];
 
 function classNames(...classes) {
@@ -28,6 +29,7 @@ export default function Header() {
     <Disclosure as="nav" className="bg-gray-900 text-white">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
+
           {/* Mobile Menu Button */}
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             <DisclosureButton className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-white">
@@ -63,7 +65,7 @@ export default function Header() {
             </div>
           </div>
 
-          {/* Auth Buttons */}
+          {/* Right Section: Auth */}
           <div className="flex items-center space-x-4">
             {!isLoggedIn ? (
               <>

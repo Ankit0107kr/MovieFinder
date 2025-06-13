@@ -7,6 +7,7 @@ import Error from "./Components/Pages/Error";
 import Movie from "./Components/Pages/Movie";
 import SearchResults from "./Components/Layouts/SearchResult";
 import Feedback from "./Components/Layouts/Feedback";
+import AboutUs from "./Components/Layouts/AboutUs";
 
 const App = () => {
   const [searchResults, setSearchResults] = useState([]);
@@ -47,6 +48,7 @@ const App = () => {
         <Route path="movies/:type" element={<MovieType />} />
         <Route path="/*" element={<Error />} />
         <Route path="/feedback" element={<Feedback />} />
+        <Route path="/about" element={<AboutUs />} />
       </Routes>
     </BrowserRouter>
   );
